@@ -1,0 +1,19 @@
+/*
+ * main.c
+ *
+ *  Created on: 18 Oct 2023
+ *      Author: maria
+ */
+#include "lcd.h"
+#include "us.h"
+
+
+
+int main (){
+	ICU_ConfigType icu={F_CPU_8,RAISING};
+	LCD_init();
+	Ultrasonic_init();
+
+
+}
+

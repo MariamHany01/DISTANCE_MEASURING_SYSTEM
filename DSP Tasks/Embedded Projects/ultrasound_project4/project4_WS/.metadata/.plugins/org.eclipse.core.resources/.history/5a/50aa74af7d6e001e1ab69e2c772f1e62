@@ -1,0 +1,13 @@
+/*
+ * main.c
+ *
+ *  Created on: 18 Oct 2023
+ *      Author: maria
+ */
+#include "lcd.h"
+#include "us.h"
+#include "icu.h"
+int main (){
+	ICU_ConfigType icu={F_CPU_8,RAISING);
+}
+

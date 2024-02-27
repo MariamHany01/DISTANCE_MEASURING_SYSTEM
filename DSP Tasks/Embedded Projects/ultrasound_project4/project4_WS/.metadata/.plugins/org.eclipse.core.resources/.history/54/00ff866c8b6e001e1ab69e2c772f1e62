@@ -1,0 +1,30 @@
+/*
+ * main.c
+ *
+ *  Created on: 18 Oct 2023
+ *      Author: maria
+ */
+#include "lcd.h"
+#include "us.h"
+#include "icu.h"
+#include <util/delay.h>
+#include<avr/io.h>
+
+
+int main (){
+
+	LCD_init();
+	Ultrasonic_init();
+	uint16 distance =0;
+	SREG|=(1<<7);
+	while (1){
+		LCD_displayString("Distance= ");
+		distance =Ultrasonic_readDistance();
+		LCD_intgerToString(distance);
+		LCD_displayString("cm");
+		LCD_clearScreen();
+		_delay_ms(1000);
+	}
+
+}
+
