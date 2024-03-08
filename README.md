@@ -1,4 +1,4 @@
-##Distance measuring system using at mega16 
+## Distance measuring system using at mega16 
 
 1. Use ATmega32 Microcontroller with frequency 8Mhz.
 2. Measure the distance using the Ultrasonic sensor HC-SR04. Check the “HC-SR04 
